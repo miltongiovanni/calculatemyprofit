@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul mon Profit</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="style/dialog.css" />-->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/general.js"></script>
+    <script src="../js/vues.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-4 col-6">
+                        <a class="navbar-brand ml-3 mt-3" href="javascript:void(0);"><img class="img-fluid"
+                                src="../img/logo.png" alt="" onclick="location.reload();"></a>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-4 col-6">
+                        <!--<nav class="navbar navbar-expand-lg navbar-dark flex-column flex-md-row bd-navbar bg-primary ">-->
+                        <nav
+                            class="navbar navbar-expand-lg flex-row flex-md-row navbar-light bd-navbar bg-white p-0 w-100 my-4 nav-font">
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
+                                <!--<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">-->
+                                <ul class="navbar-nav d-block w-100">
+                                    <li class="nav-item" id="menuProduit">
+                                        <a class="nav-link active" href="../en/" role="button">EN</a>
+                                    </li>
+                                    <li class="nav-item" id="menuProduit">
+                                        <div class="row">
+                                            <div class="col-sm-3 px-0">
+                                                <hr class="barActive" id="barProduit">
+                                            </div>
+                                            <div class="col-sm-9 px-0">
+                                                <a class="nav-link " href="javascript:void(0);" id="navbarProduit" onClick="vue('produit');" role="button">Profit Produit</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" id="menuMain">
+                                        <div class="row">
+                                            <div class="col-sm-3 px-0">
+                                                <hr class="barInactive" id="barMain">
+                                            </div>
+                                            <div class="col-sm-9 px-0">
+                                                <a class="nav-link " href="javascript:void(0);" id="navbarMain" onClick="vue('main');" role="button">Profit Main d'œuvre</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item" id="menuEntrep">
+                                        <div class="row">
+                                            <div class="col-sm-3 px-0">
+                                                <hr class="barInactive" id="barEntrep">
+                                            </div>
+                                            <div class="col-sm-9 px-0">
+                                                <a class="nav-link" href="javascript:void(0);" id="navbarEntrep" onClick="vue('entreprise'); " role="button" >Profit Entreprise</a>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-4 col-12 px-0">
+                        <div class="row" id="pub2">
+                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- calculresponsive -->
+                            <ins class="adsbygoogle"
+                                    style="display:block"
+                                    data-ad-client="ca-pub-0508437232650285"
+                                    data-ad-slot="4621355899"
+                                    data-ad-format="auto"
+                                    data-full-width-responsive="true"></ins>
+                            <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                        </div>
+                        <img src="../img/growth.png" class="img-fluid my-4 d-none  d-md-block" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5" id="main">
+                
+            </div>
+            <!--style="margin-top: 93%; margin-left: 0%; width: 50%" -->
+            <div class="col-md-5">
+                <img src="../img/image.png" class="img-fluid" alt="Responsive image" style="position: absolute;">
+                <div id="pub3">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- grand-rectangle-lesa-main-column -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:336px;height:280px"
+                        data-ad-client="ca-pub-0508437232650285"
+                        data-ad-slot="1196614690"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
