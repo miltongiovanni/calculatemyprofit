@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcul mon Profit</title>
+    <title>Calcul mon profit</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,10 +22,10 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 col-12">
                 <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-4 col-6">
-                        <a class="navbar-brand ml-3 mt-3" href="javascript:void(0);"><img class="img-fluid"
+                    <div class="col-lg-12 col-md-12 col-sm-4 col-6 px-0">
+                        <a class="navbar-brand ml-2 mt-3 w-100" href="javascript:void(0);"><img class="img-fluid"
                                 src="../img/logo.png" alt="" onclick="location.reload();"></a>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-4 col-6">
@@ -46,31 +46,31 @@
                                     </li>
                                     <li class="nav-item" id="menuProduit">
                                         <div class="row">
-                                            <div class="col-sm-3 px-0">
+                                            <div class="col-lg-3 col-sm-2 col-2 px-0">
                                                 <hr class="barActive" id="barProduit">
                                             </div>
-                                            <div class="col-sm-9 px-0">
-                                                <a class="nav-link " href="javascript:void(0);" id="navbarProduit" onClick="vue('produit');" role="button">Profit Produit</a>
+                                            <div class="col-lg-9 col-sm-10 col-10 px-0">
+                                                <a class="nav-link " href="javascript:void(0);" id="navbarProduit" onClick="vue('produit'); $('.collapse').collapse('hide'); " role="button">Profit Produit</a>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="nav-item" id="menuMain">
                                         <div class="row">
-                                            <div class="col-sm-3 px-0">
+                                            <div class="col-lg-3 col-sm-2 col-2 px-0">
                                                 <hr class="barInactive" id="barMain">
                                             </div>
-                                            <div class="col-sm-9 px-0">
-                                                <a class="nav-link " href="javascript:void(0);" id="navbarMain" onClick="vue('main');" role="button">Profit Main d'œuvre</a>
+                                            <div class="col-lg-9 col-sm-10 col-10 px-0">
+                                                <a class="nav-link " href="javascript:void(0);" id="navbarMain" onClick="vue('main'); $('.collapse').collapse('hide');" role="button">Profit Main d'œuvre</a>
                                             </div>
                                         </div>
                                     </li>
                                     <li class="nav-item" id="menuEntrep">
                                         <div class="row">
-                                            <div class="col-sm-3 px-0">
+                                            <div class="col-lg-3 col-sm-2 col-2 px-0">
                                                 <hr class="barInactive" id="barEntrep">
                                             </div>
-                                            <div class="col-sm-9 px-0">
-                                                <a class="nav-link" href="javascript:void(0);" id="navbarEntrep" onClick="vue('entreprise'); " role="button" >Profit Entreprise</a>
+                                            <div class="col-lg-9 col-sm-10 col-10 px-0">
+                                                <a class="nav-link" href="javascript:void(0);" id="navbarEntrep" onClick="vue('entreprise'); $('.collapse').collapse('hide'); " role="button" >Profit Entreprise</a>
                                             </div>
                                         </div>
 
@@ -97,11 +97,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5" id="main">
+            <div class="col-md-5 col-12" id="main">
                 
             </div>
             <!--style="margin-top: 93%; margin-left: 0%; width: 50%" -->
-            <div class="col-md-5">
+            <div class="col-md-5 col-12">
                 <img src="../img/image.png" class="img-fluid" alt="Responsive image" style="position: absolute;">
                 <div id="pub3">
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
