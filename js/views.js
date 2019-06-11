@@ -119,28 +119,10 @@ function main(){
     'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);calculMain()" placeholder="">'+
     '</div>'+
     '<div class="col-lg-6 form-group">'+
-    '<label for="prix" class="col-form-label d-flex justify-content-start"'+
-    'title="This is the price you charge your customers. This amount is always calculated, based on either the entered gross margin percent or markup percent.">'+
-    'Selling price</label>'+
-    '<input type="text" class="form-control greenBorder py-4 form-font" id="prix"'+
-    'onKeyPress="return acceptNum(event)"'+
-    'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">'+
-    ''+
-    '</div>'+
-    '</div>'+
-    '<div class="row">'+
-    '<div class="col-lg-6 form-group">'+
     '<label for="heures" class="col-form-label d-flex justify-content-start">Number of hours </label>'+
     '<input type="text" class="form-control greenBorder py-4 form-font" id="heures"'+
     'onKeyPress="return acceptNum(event)"'+
     'onchange="this.value=eedisplayFloatNDThH(eeparseFloatTh(this.value),2);calculMain()" placeholder="">'+
-    '</div>'+
-    '<div class="col-lg-6 form-group">'+
-    '<label for="majoration" class="col-form-label d-flex justify-content-start"'+
-    'title="The percentage of your workforce cost is increased by to determine the selling price for your customers.">Markup percent</label>'+
-    '<input type="text" class="form-control greenBorder py-4 form-font" id="majoration"'+
-    'onKeyPress="return acceptNum(event)"'+
-    'onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">'+
     '</div>'+
     '</div>'+
     '<div class="row">'+
@@ -150,6 +132,23 @@ function main(){
     '<input type="text" class="form-control greenBorder py-4 form-font" id="cout"'+
     'onKeyPress="return acceptNum(event)"'+
     'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="" readonly>'+
+    '</div>'+
+    '<div class="col-lg-6 form-group">'+
+    '<label for="prix" class="col-form-label d-flex justify-content-start"'+
+    'title="This is the price you charge your customers. This amount is always calculated, based on either the entered gross margin percent or markup percent.">'+
+    'Selling price</label>'+
+    '<input type="text" class="form-control greenBorder py-4 form-font" id="prix"'+
+    'onKeyPress="return acceptNum(event)"'+
+    'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">'+
+    '</div>'+
+    '</div>'+
+    '<div class="row">'+
+    '<div class="col-lg-6 form-group">'+
+    '<label for="majoration" class="col-form-label d-flex justify-content-start"'+
+    'title="The percentage of your workforce cost is increased by to determine the selling price for your customers.">Markup percent</label>'+
+    '<input type="text" class="form-control greenBorder py-4 form-font" id="majoration"'+
+    'onKeyPress="return acceptNum(event)"'+
+    'onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">'+
     '</div>'+
     '<div class="col-lg-6 form-group">'+
     '<label for="marge" class="col-form-label d-flex justify-content-start"'+

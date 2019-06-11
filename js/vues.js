@@ -118,29 +118,10 @@ function main(){
     'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);calculMain()" placeholder="">'+
     '</div>'+
     '<div class="col-lg-6 form-group">'+
-    '<label for="prix" class="col-form-label d-flex justify-content-start"'+
-    'title="C’est le prix que vous facturez à vos clients. Ce montant est toujours calculé, sur la base soit du pourcentage de marge brute, soit du pourcentage de majoration.">'+
-    'Prix de vente</label>'+
-    '<input type="text" class="form-control greenBorder py-4 form-font" id="prix"'+
-    'onKeyPress="return acceptNum(event)"'+
-    'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">'+
-    ''+
-    '</div>'+
-    '</div>'+
-    '<div class="row">'+
-    '<div class="col-lg-6 form-group">'+
     '<label for="heures" class="col-form-label d-flex justify-content-start">Nombre des heures </label>'+
     '<input type="text" class="form-control greenBorder py-4 form-font" id="heures"'+
     'onKeyPress="return acceptNum(event)"'+
     'onchange="this.value=eedisplayFloatNDThH(eeparseFloatTh(this.value),2);calculMain()" placeholder="">'+
-    '</div>'+
-    '<div class="col-lg-6 form-group">'+
-    '<label for="majoration" class="col-form-label d-flex justify-content-start"'+
-    'title="Le pourcentage de votre coût de main d\'œuvre qui est augmenté pour déterminer le prix de vente pour vos clients.' + 
-    ' Par exemple, si vous avez une majoration de 50 % sur un produit dont le prix est de 10 $, votre prix de vente serait de 15 $.">Majoration de prix en %</label>'+
-    '<input type="text" class="form-control greenBorder py-4 form-font" id="majoration"'+
-    'onKeyPress="return acceptNum(event)"'+
-    'onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">'+
     '</div>'+
     '</div>'+
     '<div class="row">'+
@@ -150,6 +131,24 @@ function main(){
     '<input type="text" class="form-control greenBorder py-4 form-font" id="cout"'+
     'onKeyPress="return acceptNum(event)"'+
     'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="" readonly>'+
+    '</div>'+
+    '<div class="col-lg-6 form-group">'+
+    '<label for="prix" class="col-form-label d-flex justify-content-start"'+
+    'title="C’est le prix que vous facturez à vos clients. Ce montant est toujours calculé, sur la base soit du pourcentage de marge brute, soit du pourcentage de majoration.">'+
+    'Prix de vente</label>'+
+    '<input type="text" class="form-control greenBorder py-4 form-font" id="prix"'+
+    'onKeyPress="return acceptNum(event)"'+
+    'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">'+
+    '</div>'+
+    '</div>'+
+    '<div class="row">'+
+    '<div class="col-lg-6 form-group">'+
+    '<label for="majoration" class="col-form-label d-flex justify-content-start"'+
+    'title="Le pourcentage de votre coût de main d\'œuvre qui est augmenté pour déterminer le prix de vente pour vos clients.' + 
+    ' Par exemple, si vous avez une majoration de 50 % sur un produit dont le prix est de 10 $, votre prix de vente serait de 15 $.">Majoration de prix en %</label>'+
+    '<input type="text" class="form-control greenBorder py-4 form-font" id="majoration"'+
+    'onKeyPress="return acceptNum(event)"'+
+    'onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">'+
     '</div>'+
     '<div class="col-lg-6 form-group">'+
     '<label for="marge" class="col-form-label d-flex justify-content-start"'+
