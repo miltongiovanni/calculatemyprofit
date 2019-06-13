@@ -9,14 +9,14 @@ function produit(){
         '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
         '<!-- header-regledetrois -->'+
         '<ins class="adsbygoogle"'+
-        'style="display:inline-block;width:728px;height:90px"'+
-        'data-ad-client="ca-pub-0508437232650285"'+
-        'data-ad-slot="2107932848"></ins>'+
+        ' style="display:inline-block;width:400px;height:90px"'+
+        ' data-ad-client="ca-pub-0508437232650285"'+
+        ' data-ad-slot="2107932848"></ins>'+
         '<script>'+
         '(adsbygoogle = window.adsbygoogle || []).push({});'+
         '</script>'+
         '</div>'+
-        '<h1 class="text-left py-sm-4 font-weight-bold titre-font"> <span class="greenTitle">Calculate </span>product\'s profit</h1>'+
+        '<h1 class="text-center py-sm-4 py-4 font-weight-bold titre-font"> <span class="greenTitle">Calculate </span>product\'s profit</h1>'+
         '<form action="" class="form-font" id="form">'+
         '<div class="form-group row">'+
         '<div class="alert alert-danger col-12 col-md-12" id="alerte">'+
@@ -37,23 +37,23 @@ function produit(){
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">'+
         '</div>'+
         '<div class="col-lg-5 form-group">'+
-        '<label for="majoration" class="col-form-label d-flex justify-content-start"'+
-        'title="The percentage of your wholesale cost that the product\'s price is increased by to determine the selling price for your customers.'+
-        ' For example, if you have a 50% markup on a product with a wholesale cost of $10, your selling price would be $15.00.">Markup percent</label>'+
-        '<input type="text" class="form-control greenBorder py-4 form-font" id="majoration"'+
+        '<label for="prix" class="col-form-label d-flex justify-content-start"'+
+        'title="This is the price you charge your customers. This amount is always calculated, based on either the entered gross margin percent or markup percent.">Selling price</label>'+
+        '<input type="text" class="form-control greenBorder py-4 form-font" id="prix"'+
         'onKeyPress="return acceptNum(event)"'+
-        'onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">'+
+        'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">'+
         '</div>'+
         '<div class="col-lg-1"></div>'+
         '</div>'+
         '<div class="row">'+
         '<div class="col-lg-1"></div>'+
         '<div class="col-lg-5 form-group">'+
-        '<label for="prix" class="col-form-label d-flex justify-content-start"'+
-        'title="This is the price you charge your customers. This amount is always calculated, based on either the entered gross margin percent or markup percent.">Selling price</label>'+
-        '<input type="text" class="form-control greenBorder py-4 form-font" id="prix"'+
+        '<label for="majoration" class="col-form-label d-flex justify-content-start"'+
+        'title="The percentage of your wholesale cost that the product\'s price is increased by to determine the selling price for your customers.'+
+        ' For example, if you have a 50% markup on a product with a wholesale cost of $10, your selling price would be $15.00.">Markup percent</label>'+
+        '<input type="text" class="form-control greenBorder py-4 form-font" id="majoration"'+
         'onKeyPress="return acceptNum(event)"'+
-        'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">'+
+        'onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">'+
         '</div>'+
         '<div class="col-lg-5 form-group">'+
         '<label for="marge" class="col-form-label d-flex justify-content-start"'+
@@ -79,13 +79,7 @@ function produit(){
         '<p class="px-lg-4 pt-lg-4 text-justify form-font">This tool can help you to determine the selling price, the  profit margin  or the gross margin.'+
         '  If you want to calculate the selling price you should enter the profit margin or the gross margin.'+
         '  If you want to know the profit margin you have to enter the sellig price.</p>'+
-        '<p class="px-lg-4 pt-lg-4 text-justify form-font mb-5 ">You should fill two fields, one field has to be one of the gauche options.</p>'+
-        ''+
-        '<!-- Copyright -->'+
-        '<div class="footer-copyright text-left mt-5 mb-0"><small>© 2019 Copyright:'+
-        '<a href="javascript:void(0);" onclick="location.reload();"'+
-        'class="text-black">calculatemyprofit.com</a></small>'+
-        '</div>';
+        '<p class="px-lg-4 pt-lg-4 text-justify form-font mb-5 ">You should fill two fields, one field has to be one of the gauche options.</p>';
 	$('#main').html(rep);
 }
 function main(){
@@ -93,14 +87,14 @@ function main(){
     '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
     '<!-- header-regledetrois -->'+
     '<ins class="adsbygoogle"'+
-    'style="display:inline-block;width:728px;height:90px"'+
-    'data-ad-client="ca-pub-0508437232650285"'+
-    'data-ad-slot="2107932848"></ins>'+
+    ' style="display:inline-block;width:500px;height:90px"'+
+    ' data-ad-client="ca-pub-0508437232650285"'+
+    ' data-ad-slot="2107932848"></ins>'+
     '<script>'+
     '(adsbygoogle = window.adsbygoogle || []).push({});'+
     '</script>'+
     '</div>'+
-    '<h1 class="text-left py-sm-4 font-weight-bold titre-font"> <span class="greenTitle">Calculate </span>workforce\'s profit</h1>'+
+    '<h1 class="text-center py-sm-4 py-4 font-weight-bold titre-font"> <span class="greenTitle">Calculate </span>workforce\'s profit</h1>'+
     '<form action="" class="form-font" id="form">'+
     '<div class="form-group row">'+
     '<div class="alert alert-danger col-12 col-md-12" id="alerte">'+
@@ -174,12 +168,7 @@ function main(){
     '<p class="px-lg-4 pt-lg-4 text-justify form-font  ">This tool will allow you to calculate the selling price, the markup % or the gross margin %.' +
     ' If you want to calculate the selling price you will have to write the markup %. If you want to know the gross margin % you will have to enter the selling price.</p>'+
     '<p class="px-lg-4 pt-lg-4 text-justify form-font mb-5 ">You can change the workforce cost per hour or the number of hours to calculate the cost. '+
-    ' You must fill in one field from the right to calculate the others.</p>'+
-    '<!-- Copyright -->'+
-    '<div class="footer-copyright text-left mt-5 mb-0"><small>© 2019 Copyright:'+
-    '<a href="javascript:void(0);" onclick="location.reload();"'+
-    'class="text-black">calculatemyprofit.com</a></small>'+
-    '</div>';
+    ' You must fill in one field from the right to calculate the others.</p>';
     $('#main').html(rep);
 }
 function entreprise(){
@@ -187,14 +176,14 @@ function entreprise(){
     '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
     '<!-- header-regledetrois -->'+
     '<ins class="adsbygoogle"'+
-    'style="display:inline-block;width:728px;height:90px"'+
-    'data-ad-client="ca-pub-0508437232650285"'+
-    'data-ad-slot="2107932848"></ins>'+
+    ' style="display:inline-block;width:500px;height:90px"'+
+    ' data-ad-client="ca-pub-0508437232650285"'+
+    ' data-ad-slot="2107932848"></ins>'+
     '<script>'+
     '(adsbygoogle = window.adsbygoogle || []).push({});'+
     '</script>'+
     '</div>'+
-    '<h1 class="text-left py-sm-0 py-2 my-sm-0 font-weight-bold titre-font"> <span class="greenTitle">Calculate </span>enterprise\'s profit</h1>'+
+    '<h1 class="text-center py-sm-2 py-2 my-sm-0 font-weight-bold titre-font"> <span class="greenTitle">Calculate </span>enterprise\'s profit</h1>'+
     ''+
     '<form action="" class="form-font" id="form">'+
     '<div class="row subtitle d-flex justify-content-center">'+
@@ -394,12 +383,7 @@ function entreprise(){
     'type="reset">Reset&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-redo-alt"></i></button>'+
     '</div>'+
     '</div>'+
-    '</form>'+
-    '<!-- Copyright -->'+
-    '<div class="footer-copyright text-left mt-5 mb-0"><small>© 2019 Copyright:'+
-    '<a href="javascript:void(0);" onclick="location.reload();"'+
-    'class="text-black">calculatemyprofit.com</a></small>'+
-    '</div>';
+    '</form>';
     $('#main').html(rep);
 }
 var vue = function (action) {
@@ -411,7 +395,8 @@ var vue = function (action) {
             $("#barMain, #barEntrep").addClass("barInactive");
             $("#navbarProduit, #navbarMain, #navbarEntrep").removeClass("active",);
             $("#navbarProduit").addClass("active");
-			produit();
+            produit();
+            $("#main").css("margin-bottom", "11%");
 			break;
 		case 'main':
             $("#barProduit, #barMain, #barEntrep").removeClass("barActive");
@@ -420,7 +405,8 @@ var vue = function (action) {
             $("#barProduit, #barEntrep").addClass("barInactive");
             $("#navbarProduit, #navbarMain, #navbarEntrep").removeClass("active",);
             $("#navbarMain").addClass("active");
-			main();
+            main();
+            $("#main").css("margin-bottom", "30px");
 			break;
 		case 'entreprise':
             $("#barProduit, #barMain, #barEntrep").removeClass("barActive");
@@ -429,7 +415,8 @@ var vue = function (action) {
             $("#barMain, #barProduit").addClass("barInactive");
             $("#navbarProduit, #navbarMain, #navbarEntrep").removeClass("active",);
             $("#navbarEntrep").addClass("active");
-			entreprise();
+            entreprise();
+            $("#main").css("margin-bottom", "60px");
 			break;
 	}
 

@@ -9,14 +9,14 @@ function produit(){
         '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
         '<!-- header-regledetrois -->'+
         '<ins class="adsbygoogle"'+
-        'style="display:inline-block;width:728px;height:90px"'+
-        'data-ad-client="ca-pub-0508437232650285"'+
-        'data-ad-slot="2107932848"></ins>'+
+        ' style="display:inline-block;width:375px;height:90px"'+
+        ' data-ad-client="ca-pub-0508437232650285"'+
+        ' data-ad-slot="2107932848"></ins>'+
         '<script>'+
         '(adsbygoogle = window.adsbygoogle || []).push({});'+
         '</script>'+
         '</div>'+
-        '<h1 class="text-left py-sm-4 font-weight-bold titre-font"> <span class="greenTitle">Calcul </span>du profit d\'un Produit</h1>'+
+        '<h1 class="text-center py-sm-4 py-4 font-weight-bold titre-font"> <span class="greenTitle">Calcul </span>du profit d\'un Produit</h1>'+
         '<form action="" class="form-font" id="form">'+
         '<div class="form-group row">'+
         '<div class="alert alert-danger col-12 col-md-12" id="alerte">'+
@@ -37,23 +37,23 @@ function produit(){
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">'+
         '</div>'+
         '<div class="col-lg-5 form-group">'+
-        '<label for="majoration" class="col-form-label d-flex justify-content-start"'+
-        'title="Le pourcentage de votre coût que le prix du produit est augmenté pour déterminer le prix de vente pour vos clients.' + 
-        ' Par exemple, si vous avez une majoration de 50 % sur un produit dont le prix est de 10 $, votre prix de vente serait de 15 $.">Majoration de prix en %</label>'+
-        '<input type="text" class="form-control greenBorder py-4 form-font" id="majoration"'+
+        '<label for="prix" class="col-form-label d-flex justify-content-start"'+
+        'title="C’est le prix que vous facturez à vos clients. Ce montant est toujours calculé, sur la base soit du pourcentage de marge brute, soit du pourcentage de majoration.">Prix de vente</label>'+
+        '<input type="text" class="form-control greenBorder py-4 form-font" id="prix"'+
         'onKeyPress="return acceptNum(event)"'+
-        'onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">'+
+        'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">'+
         '</div>'+
         '<div class="col-lg-1"></div>'+
         '</div>'+
         '<div class="row">'+
         '<div class="col-lg-1"></div>'+
         '<div class="col-lg-5 form-group">'+
-        '<label for="prix" class="col-form-label d-flex justify-content-start"'+
-        'title="C’est le prix que vous facturez à vos clients. Ce montant est toujours calculé, sur la base soit du pourcentage de marge brute, soit du pourcentage de majoration.">Prix de vente</label>'+
-        '<input type="text" class="form-control greenBorder py-4 form-font" id="prix"'+
+        '<label for="majoration" class="col-form-label d-flex justify-content-start"'+
+        'title="Le pourcentage de votre coût que le prix du produit est augmenté pour déterminer le prix de vente pour vos clients.' + 
+        ' Par exemple, si vous avez une majoration de 50 % sur un produit dont le prix est de 10 $, votre prix de vente serait de 15 $.">Majoration de prix en %</label>'+
+        '<input type="text" class="form-control greenBorder py-4 form-font" id="majoration"'+
         'onKeyPress="return acceptNum(event)"'+
-        'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">'+
+        'onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">'+
         '</div>'+
         '<div class="col-lg-5 form-group">'+
         '<label for="marge" class="col-form-label d-flex justify-content-start"'+
@@ -79,27 +79,35 @@ function produit(){
         '<p class="px-lg-4 pt-lg-4 text-justify form-font">Cette outil vous permettra calculer le prix de vente, la majoration de prix en % ou le marge bruit en %.'+
         '  Si vous voulez calculer le prix de vente vous devrez écrire la majoration de prix en %.'+
         '  Si vous voulez savoir la majoration de prix en % vous devrez entrer le prix de vente.</p>'+
-        '<p class="px-lg-4 pb-lg-4 pb-2 text-justify mb-5 form-font">Vous devez remplir deux champs, un champ doit être une des options de gauche.</p>'+
-        '<!-- Copyright -->'+
-        '<div class="footer-copyright text-left mt-5 mb-0 font-footer"><small>© 2019 Copyright:'+
-        '<a href="javascript:void(0);" onclick="location.reload();"'+
-        'class="text-black">calculatemyprofit.com</a></small>'+
-        '</div>';
+        '<p class="px-lg-4 pb-lg-4 pb-2 text-justify mb-5 form-font">Vous devez remplir deux champs, un champ doit être une des options de gauche.</p>';
 	$('#main').html(rep);
 }
 function main(){
     rep='<div class="row" id="pub1" >'+
+'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
+'<!-- calculresponsive -->'+
+'<ins class="adsbygoogle"'+
+'style="display:block"'+
+' data-ad-client="ca-pub-0508437232650285"'+
+' data-ad-slot="4621355899"'+
+' data-ad-format="auto"'+
+' data-full-width-responsive="true"></ins>'+
+'<script>'+
+'(adsbygoogle = window.adsbygoogle || []).push({});'+
+'</script>'
++
+/*
     '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
     '<!-- header-regledetrois -->'+
     '<ins class="adsbygoogle"'+
-    'style="display:inline-block;width:728px;height:90px"'+
+    'style="display:inline-block;width:500px;height:90px"'+
     'data-ad-client="ca-pub-0508437232650285"'+
     'data-ad-slot="2107932848"></ins>'+
     '<script>'+
     '(adsbygoogle = window.adsbygoogle || []).push({});'+
-    '</script>'+
+    '</script>'+*/
     '</div>'+
-    '<h1 class="text-left py-sm-4 font-weight-bold titre-font"> <span class="greenTitle">Calcul </span>du profit avec main d\'œuvre</h1>'+
+    '<h1 class="text-center py-sm-4 py-4 font-weight-bold titre-font"> <span class="greenTitle">Calcul </span>du profit avec main d\'œuvre</h1>'+
     '<form action="" class="form-font" id="form">'+
     '<div class="form-group row">'+
     '<div class="alert alert-danger col-12 col-md-12" id="alerte">'+
@@ -174,13 +182,7 @@ function main(){
     '  Si vous voulez calculer le prix de vente vous devrez écrire la majoration de prix en %.'+
     '  Si vous voulez savoir la majoration de prix en % vous devrez entrer le prix de vente.</p>'+
     '<p class="px-lg-4 pb-lg-4 text-justify mb-5 form-font">Vous pouvez changer le coût de main d\'œuvre par heure ou nombre de heures pour calculer le coût.'+
-    '  Vous devez remplir un champs de la droite pour calculer les autres.</p>'+
-    ''+
-    '<!-- Copyright -->'+
-    '<div class="footer-copyright text-left mt-5 mb-0"><small>© 2019 Copyright:'+
-    '<a href="javascript:void(0);" onclick="location.reload();"'+
-    'class="text-black">calculatemyprofit.com</a></small>'+
-    '</div>';
+    '  Vous devez remplir un champs de la droite pour calculer les autres.</p>';
     $('#main').html(rep);
 }
 function entreprise(){
@@ -188,14 +190,14 @@ function entreprise(){
     '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'+
     '<!-- header-regledetrois -->'+
     '<ins class="adsbygoogle"'+
-    'style="display:inline-block;width:728px;height:90px"'+
-    'data-ad-client="ca-pub-0508437232650285"'+
-    'data-ad-slot="2107932848"></ins>'+
+    ' style="display:inline-block;width:500px;height:90px"'+
+    ' data-ad-client="ca-pub-0508437232650285"'+
+    ' data-ad-slot="2107932848"></ins>'+
     '<script>'+
     '(adsbygoogle = window.adsbygoogle || []).push({});'+
     '</script>'+
     '</div>'+
-    '<h1 class="text-left py-sm-0 py-2 my-sm-0 font-weight-bold titre-font"> <span class="greenTitle">Calcul </span>du'+
+    '<h1 class="text-center py-sm-0 py-2 my-sm-0 font-weight-bold titre-font"> <span class="greenTitle">Calcul </span>du'+
     'profit d\'une Entreprise</h1>'+
     ''+
     '<form action="" class="form-font" id="form">'+
@@ -396,12 +398,7 @@ function entreprise(){
     'type="reset">Réinitialiser&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-redo-alt"></i></button>'+
     '</div>'+
     '</div>'+
-    '</form>'+
-    '<!-- Copyright -->'+
-    '<div class="footer-copyright text-left mt-5 mb-0"><small>© 2019 Copyright:'+
-    '<a href="javascript:void(0);" onclick="location.reload();"'+
-    'class="text-black">calculatemyprofit.com</a></small>'+
-    '</div>';
+    '</form>';
     $('#main').html(rep);
 }
 var vue = function (action) {
@@ -413,7 +410,8 @@ var vue = function (action) {
             $("#barMain, #barEntrep").addClass("barInactive");
             $("#navbarProduit, #navbarMain, #navbarEntrep").removeClass("active",);
             $("#navbarProduit").addClass("active");
-			produit();
+            produit();
+            $("#main").css("margin-bottom", "11%");
 			break;
 		case 'main':
             $("#barProduit, #barMain, #barEntrep").removeClass("barActive");
@@ -422,7 +420,8 @@ var vue = function (action) {
             $("#barProduit, #barEntrep").addClass("barInactive");
             $("#navbarProduit, #navbarMain, #navbarEntrep").removeClass("active",);
             $("#navbarMain").addClass("active");
-			main();
+            main();
+            $("#main").css("margin-bottom", "30px");
 			break;
 		case 'entreprise':
             $("#barProduit, #barMain, #barEntrep").removeClass("barActive");
@@ -431,7 +430,8 @@ var vue = function (action) {
             $("#barMain, #barProduit").addClass("barInactive");
             $("#navbarProduit, #navbarMain, #navbarEntrep").removeClass("active",);
             $("#navbarEntrep").addClass("active");
-			entreprise();
+            entreprise();
+            $("#main").css("margin-bottom", "60px");
 			break;
 	}
 

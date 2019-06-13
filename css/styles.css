@@ -32,6 +32,11 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+footer{
+	background-color: #aee4d9;
+	height: 100px;
+	margin-top: 157%;
+}
 .form-font {
 	font-size: 4.0vw;
 }
@@ -43,7 +48,7 @@ body {
 .greenBorder {
 	border: 2px solid #159d91;
 	border-radius: 0.75rem;
-	color: #b2b2b2;
+	color: #404040;
 }
 
 .greenButton {
@@ -71,7 +76,7 @@ hr.barInactive {
 
 
 #main{
-	margin-bottom: 22%;
+	margin-bottom: 11%;
 }
 nav {
 	font-weight: 700;
@@ -84,13 +89,16 @@ nav {
 	width: 100%;
 	height: 8%;
 	max-height: 80px;
+	padding-left: 33%;
 	/*background-color: red;*/
 }
 
 #pub2{
 	width: 100%;
 	height: 80px;
+	padding-left: 4%;
 	/*background-color: yellow;*/
+	
 }
 
 #pub3{
@@ -112,6 +120,9 @@ nav {
 }
 
 @media (min-width: 576px) {
+	footer{
+		margin-top: 152%;
+	}
 	.form-font {
 		font-size: 3.5vw;
 	}
@@ -119,9 +130,18 @@ nav {
 	.font-footer {
 		font-size: 3.5vw;
 	}
-
+	#main{
+		margin-bottom: 4%;
+	}
 	.nav-font {
 		font-size: 2vw;
+	}
+	#pub1{
+		width: 100%;
+		height: 8%;
+		max-height: 80px;
+		padding-left: 12%;
+		/*background-color: red;*/
 	}
 	#pub2{
 		height: 100%;
@@ -140,6 +160,9 @@ nav {
 
 
 @media (min-width: 768px) {
+	footer{
+		margin-top: 0;
+	}
 	.form-font {
 		font-size: 2.0vw;
 	}
@@ -147,9 +170,22 @@ nav {
 	.font-footer {
 		font-size: 2vw;
 	}
+	#main{
+		margin-bottom: 3%;
+	}
 
 	.nav-font {
 		font-size: 1.2vw;
+	}
+	#pub1{
+		width: 100%;
+		height: 8%;
+		max-height: 80px;
+		padding-left: 12%;
+		/*background-color: red;*/
+	}
+	#pub2{
+		height: 400;
 	}
 	#pub3{
 		height: 14%;
@@ -165,6 +201,9 @@ nav {
 
 
 @media (min-width: 992px) {
+	footer{
+		margin-top: 0;
+	}
 	.form-font {
 		font-size: 1.3vw;
 	}
@@ -172,11 +211,22 @@ nav {
 	.font-footer{
 		font-size: 1.5vw;
 	}
-
+	#main{
+		margin-bottom: 6%;
+	}
 	.nav-font {
 		font-size: 1.2vw;
 	}
-
+	#pub1{
+		width: 100%;
+		height: 8%;
+		max-height: 80px;
+		padding-left: 12%;
+		/*background-color: red;*/
+	}
+	#pub2{
+		max-height: 400px;
+	}
 	#pub3{
 		height: 22%;
 	}
@@ -190,6 +240,9 @@ nav {
 
 
 @media (min-width: 1200px) {
+	footer{
+		margin-top: 0;
+	}
 	.form-font {
 		font-size: 1.35vw;
 	}
@@ -197,12 +250,25 @@ nav {
 	.font-footer {
 		font-size: 1.5vw;
 	}
-
+	#main{
+		margin-bottom: 11%;
+	}
 	.nav-font {
 		font-size: 1.2vw;
 	}
+	#pub1{
+		width: 100%;
+		height: 8%;
+		max-height: 80px;
+		padding-left: 12%;
+		/*background-color: red;*/
+	}
+	#pub2{
+		max-height: 400px;
+	}
 	#pub3{
 		height: 25%;
+		max-height: 280px;
 	}
 	.subtitle{
 		font-size: 2vw;
