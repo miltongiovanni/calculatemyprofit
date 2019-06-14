@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon.ico" type="image/ico" sizes="16x16">
     <title>Calculate my profit</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -20,17 +20,16 @@
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>-->
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
 </head>
-
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2 col-12">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-4 col-6 px-0">
-                        <a class="navbar-brand ml-2 mt-3 w-100" href="javascript:void(0);"><img class="img-fluid"
+    <div class="container-fluid px-0">
+        <div class="d-flex flex-wrap">
+            <div class="col-md-2 col-12 px-0">
+                <div class="d-flex flex-wrap">
+                    <div class="col-lg-12 col-md-12 col-sm-4 col-8 px-0">
+                        <a class="navbar-brand ml-2 mt-3 w-100" href="javascript:void(0);"><img class="img-fluid" id="logo"
                                 src="../img/logo.png" alt="" onclick="location.reload();"></a>
                     </div>
-                    <div class="col-lg-12 col-md-12 col-sm-4 col-6">
+                    <div class="col-lg-12 col-md-12 col-sm-4 col-4">
                         <!--<nav class="navbar navbar-expand-lg navbar-dark flex-column flex-md-row bd-navbar bg-primary ">-->
                         <nav
                             class="navbar navbar-expand-lg flex-row flex-md-row navbar-light bd-navbar bg-white p-0 w-100 my-4 nav-font">
@@ -47,7 +46,7 @@
                                         <a class="nav-link active" href="../fr/" role="button">FR</a>
                                     </li>
                                     <li class="nav-item" id="menuProduit">
-                                        <div class="row">
+                                        <div class="d-flex flex-wrap">
                                             <div class="col-lg-3 col-sm-2 col-2 px-0">
                                                 <hr class="barActive" id="barProduit">
                                             </div>
@@ -59,7 +58,7 @@
                                         </div>
                                     </li>
                                     <li class="nav-item" id="menuMain">
-                                        <div class="row">
+                                        <div class="d-flex flex-wrap">
                                             <div class="col-lg-3 col-sm-2 col-2 px-0">
                                                 <hr class="barInactive" id="barMain">
                                             </div>
@@ -71,7 +70,7 @@
                                         </div>
                                     </li>
                                     <li class="nav-item" id="menuEntrep">
-                                        <div class="row">
+                                        <div class="d-flex flex-wrap">
                                             <div class="col-lg-3 col-sm-2 col-2 px-0">
                                                 <hr class="barInactive" id="barEntrep">
                                             </div>
@@ -88,7 +87,7 @@
                         </nav>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-4 col-12 px-0">
-                        <div class="row d-none  d-lg-block" id="pub2">
+                        <div class="justify-content-center d-none  d-lg-flex" id="pub2">
                             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                             <!-- Large-skyscrapper-droite-proverbes -->
                             <ins class="adsbygoogle" style="display:inline-block;width:220px;height:400px"
@@ -101,11 +100,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 col-12 " id="main">
+            <div class="col-md-5 col-12 px-0" id="main">
 
             </div>
             <!--style="margin-top: 93%; margin-left: 0%; width: 50%" -->
-            <div class="col-md-5 col-12">
+            <div class="col-md-5 col-12 px-0">
                 <img src="../img/image.png" class="img-fluid" alt="Responsive image" style="position: absolute;">
                 <div id="pub3">
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -121,7 +120,7 @@
         </div>
     </div>
 
-    <footer class="row justify-content-center align-items-center">
+    <footer class="d-flex flex-wrap justify-content-center align-items-center">
 
         <!-- Copyright -->
 
