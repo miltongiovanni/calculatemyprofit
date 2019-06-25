@@ -366,6 +366,6 @@ function montrerAlerte() {
     setTimeout(function () {
         document.getElementById('alerte').style.display = 'none';
         document.getElementById("form").reset();
-    }, 2000);
+    }, 2500);
 
 }

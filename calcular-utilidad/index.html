@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.ico" type="image/ico" sizes="16x16">
-    <title>Calculate my profit</title>
+    <link rel="icon" href="../img/favicon.ico" type="image/ico" sizes="16x16">
+    <title>Calcular mi utilidad</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/general.js"></script>
-    <script src="js/views.js"></script>
+    <link href="../css/styles.css" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/general.js"></script>
+    <script src="../js/vistas.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
         (adsbygoogle = window.adsbygoogle || []).push({
@@ -33,7 +33,7 @@
                 <div class="d-flex flex-wrap align-items-baseline">
                     <div class="col-md-12 col-sm-10 col-10 px-0">
                         <a class="navbar-brand ml-2 mt-3 w-100" href="javascript:void(0);"><img class="img-fluid"
-                                id="logo" src="img/logo.png" alt="" onclick="location.reload();"></a>
+                                id="logo" src="../img/logo.png" alt="" onclick="location.reload();"></a>
                     </div>
                     <div class="col-2 d-block d-md-none">
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -53,15 +53,15 @@
                             <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
                                 <!--<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">-->
                                 <ul class="navbar-nav d-block w-100">
-                                    <li class="nav-item" id="menuProduct">
+                                    <li class="nav-item" id="menuProduit">
                                         <div class="d-flex flex-wrap">
                                             <div class="col-lg-2 col-sm-2 col-2 px-0">
-                                                <hr class="barActive" id="barProduct">
+                                                <hr class="barActive" id="barProduit">
                                             </div>
                                             <div class="col-lg-10 col-sm-10 col-10 px-0">
-                                                <a class="nav-link " href="javascript:void(0);" id="navbarProduct"
-                                                    onClick="view('product'); $('.collapse').collapse('hide');"
-                                                    role="button">Product's Profit</a>
+                                                <a class="nav-link " href="javascript:void(0);" id="navbarProduit"
+                                                    onClick="vista('producto'); $('.collapse').collapse('hide');"
+                                                    role="button">Utilidad Producto</a>
                                             </div>
                                         </div>
                                     </li>
@@ -72,8 +72,8 @@
                                             </div>
                                             <div class="col-lg-10 col-sm-10 col-10 px-0">
                                                 <a class="nav-link " href="javascript:void(0);" id="navbarMain"
-                                                    onClick="view('main'); $('.collapse').collapse('hide');"
-                                                    role="button">Workforce's Profit</a>
+                                                    onClick="vista('principal'); $('.collapse').collapse('hide');"
+                                                    role="button">Utilidad Mano de obra</a>
                                             </div>
                                         </div>
                                     </li>
@@ -84,18 +84,18 @@
                                             </div>
                                             <div class="col-lg-10 col-sm-10 col-10 px-0">
                                                 <a class="nav-link" href="javascript:void(0);" id="navbarEntrep"
-                                                    onClick="view('enterprise'); $('.collapse').collapse('hide');"
-                                                    role="button">Enterprise's Profit</a>
+                                                    onClick="vista('empresa'); $('.collapse').collapse('hide');"
+                                                    role="button">Utilidad Empresa</a>
                                             </div>
                                         </div>
 
                                     </li>
                                 </ul>
                             </div>
-                        </nav>
 
-                        <a class="nav-link active" href="outil-calcul-profit" role="button">FR</a>
-                        <a class="nav-link active" href="calcular-utilidad" role="button">ES</a>
+                        </nav>
+                        <a class="nav-link active" href="../" role="button">EN</a>
+                        <a class="nav-link active" href="../outil-calcul-profit" role="button">FR</a>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-4 col-12 px-0">
                         <div class="justify-content-center d-none  d-lg-flex" id="pub2">
@@ -107,7 +107,7 @@
                                 (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
                         </div>
-                        <img src="img/growth.png" class="img-fluid my-0 pb-0 d-none  d-md-block" alt="">
+                        <img src="../img/growth.png" class="img-fluid my-0 pb-0 d-none  d-md-block" alt="">
                     </div>
                 </div>
             </div>
@@ -115,7 +115,7 @@
 
             </div>
             <div class="col-md-5 col-12 px-0">
-                <img src="img/image.png" class="img-fluid" alt="Responsive image">
+                <img src="../img/image.png" class="img-fluid" alt="Responsive image">
             </div>
         </div>
     </div>
@@ -133,7 +133,8 @@
                 <small><a href="https://dubucmarketing.com" target="_blank">Conception et SEO </a></small>
             </div>
             <div class="dm-img">
-                <a href="https://dubucmarketing.com" target="_blank"><img alt="Dubuc Marketing" class="img-fluid" src="img/dm.png"></a>       
+                <a href="https://dubucmarketing.com" target="_blank"><img alt="Dubuc Marketing" class="img-fluid"
+                        src="../img/dm.png"></a>
             </div>
 
         </div>
