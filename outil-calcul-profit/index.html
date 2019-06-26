@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/favicon.ico" type="image/ico" sizes="16x16">
     <title>Calcul mon profit</title>
+    <meta name="description"
+        content="Calcul mon profit est l'outil de calcul de profit le plus utilisé au Québec. Calculez votre profit dès maintenant !">
+    <meta name="keywords" content="calcul le profit, calcul prix de vente, calcul marge brute">
+    <meta name="author" content="Dubuc Marketing">
+    <meta name="robots" content="index,follow">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -107,14 +112,101 @@
                             <script>
                                 (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
-                            
+
                         </div>
                         <img src="../img/growth.png" class="img-fluid my-0 pb-0 d-none  d-md-block" alt="">
                     </div>
                 </div>
             </div>
             <div class="col-md-5 col-12 px-0" id="main">
-
+                <div class="d-flex justify-content-center" id="pub1">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- header-regledetrois -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:375px;height:90px"
+                        data-ad-client="ca-pub-0508437232650285"
+                        data-ad-slot="2107932848">
+                    </ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <h1 class="text-center py-sm-4 py-4 font-weight-bold titre-font"> <span class="greenTitle">Calcul </span>du profit d'un Produit</h1>
+                <form class="form-font" id="form">
+                    <div class="form-group d-flex flex-wrap">
+                        <div class="alert alert-danger col-12 col-md-12" id="alerte">Vous devez choisir le prix d'achat ou le prix de vente
+                            <button type="button" class="close" onclick="document.getElementById('alerte').style.display = 'none';">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="col-lg-1 "></div>
+                        <div class="col-lg-5 col-12 px-lg-1  px-5 form-group">
+                            <label for="cout" class="col-form-label d-flex justify-content-start align-items-baseline">Coût ou prix d'achat&nbsp;
+                                <i class="fas fa-question-circle" data-toggle="popover"
+                                    data-placement="top"
+                                    data-content="Votre coût total du produit que vous allez revendre.">
+                                </i>
+                            </label>
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="cout"
+                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">
+                        </div>
+                        <div class="col-lg-5 col-12 px-lg-1  px-5 form-group">
+                            <label for="prix" class="col-form-label d-flex justify-content-start align-items-baseline">Prix de vente&nbsp;
+                                <i class="fas fa-question-circle" data-toggle="popover" data-placement="top"
+                                    data-content="C’est le prix que vous facturez à vos clients. Ce montant est toujours calculé, sur la base soit du pourcentage de marge brute, soit du pourcentage de majoration.">
+                                </i>
+                            </label>
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="prix" 
+                            onkeypress="return acceptNum(event)" onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-5 col-12 px-lg-1  px-5 form-group">
+                            <label for="majoration" class="col-form-label d-flex justify-content-start align-items-baseline">Majoration de prix en %&nbsp;
+                                <i class="fas fa-question-circle" data-toggle="popover"
+                                    data-placement="top"
+                                    data-content="Le pourcentage de votre coût que le prix du produit est augmenté pour déterminer le prix de vente pour vos clients. Par exemple, si vous avez une majoration de 50 % sur un produit dont le prix est de 10 $, votre prix de vente serait de 15 $.">
+                                </i>
+                            </label>
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="majoration"
+                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">
+                        </div>
+                        <div class="col-lg-5 col-12 px-lg-1  px-5 form-group">
+                            <label for="marge" class="col-form-label d-flex justify-content-start align-items-baseline">Marge brute en %&nbsp;
+                                <i class="fas fa-question-circle" data-toggle="popover" data-placement="top"
+                                    data-content="Ce pourcentage est le bénéfice brut de votre produit. Par exemple, si vous avez un produit dont le prix de gros est de 10 $ et un prix de vente de 15 $, votre marge brute est de 33,33 %.">
+                                </i>
+                            </label>
+                            <input type="text"
+                                class="form-control greenBorder py-4 form-font" id="marge"
+                                onkeypress="return acceptNum(event)"
+                                onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 d-flex justify-content-end">
+                            <button class="btn greenButton py-2  px-3 my-4 btn-success form-font" type="reset">Réinitialiser&nbsp;
+                                <i class="fas fa-redo-alt"></i>
+                            </button>
+                        </div>
+                        <div class="col-6 d-flex justify-content-start">
+                            <button class="btn blueButton py-2 px-2 px-lg-3 my-4 btn-info form-font" onclick="calculate1();" type="button">Calculer&nbsp;&nbsp;&nbsp; 
+                                <i class="fas fa-calculator"></i>&nbsp;&nbsp;
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <p class="px-lg-4 px-3 pt-lg-4 text-justify form-font">Cette outil vous permettra calculer le prix de
+                    vente, la majoration de prix en % ou le marge bruit en %. Si vous voulez calculer le prix de vente
+                    et le marge bruit vous devrez écrire la majoration de prix en %. Si vous voulez savoir la majoration
+                    de prix en % et la majoration de prix en % vous devrez entrer le prix de vente.</p>
+                <p class="px-lg-4 pb-lg-4 pb-2 px-3 text-justify form-font">Vous devez remplir deux champs, un champ
+                    doit être une des options de gauche.</p>
             </div>
             <div class="col-md-5 col-12 px-0">
                 <img src="../img/image.png" class="img-fluid" alt="Responsive image">

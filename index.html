@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" type="image/ico" sizes="16x16">
     <title>Calculate my profit</title>
+    <meta name="description" content="Calculate my profit is the tool the most used in Quebec. Calculate from now !">
+    <meta name="keywords" content="calculate profit, calculate selling price, calculate gross margin">
+    <meta name="author" content="Dubuc Marketing">
+    <meta name="robots" content="index,follow">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -112,7 +116,90 @@
                 </div>
             </div>
             <div class="col-md-5 col-12 px-0" id="main">
-
+                <div class="d-flex justify-content-center" id="pub1">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- header-regledetrois -->
+                    <ins class="adsbygoogle"
+                    style="display:inline-block;width:375px;height:90px"
+                    data-ad-client="ca-pub-0508437232650285"
+                    data-ad-slot="2107932848"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <h1 class="text-center py-sm-4 py-4 font-weight-bold titre-font"> <span class="greenTitle">Calculate </span>product's profit</h1>
+                <form class="form-font" id="form">
+                    <div class="form-group d-flex flex-wrap">
+                        <div class="alert alert-danger col-12 col-md-12" id="alerte">You have to select either the wholesale cost or the selling price!
+                            <button type="button" class="close" onclick="document.getElementById('alerte').style.display = 'none';">
+                                <span aria-hidden="true">×</span></button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="col-lg-1 "></div>
+                        <div class="col-lg-5 col-12 form-group px-lg-1  px-5">
+                            <label for="cout" class="col-form-label d-flex justify-content-start align-items-baseline"> Wholesale cost&nbsp;
+                                <i class="fas fa-question-circle" data-toggle="popover" data-placement="top"
+                                    data-content="Your total wholesale cost of the product that you are going to resell.">
+                                </i>
+                            </label>
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="cout" onkeypress="return acceptNum(event)"
+                                onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">
+                        </div>
+                        <div class="col-lg-5 col-12 form-group px-lg-1  px-5">
+                            <label for="prix" class="col-form-label d-flex justify-content-start align-items-baseline">Selling price&nbsp;
+                                <i class="fas fa-question-circle" data-toggle="popover" data-placement="top"
+                                    data-content="This is the price you charge your customers. This amount is always calculated, based on either the entered gross margin percent or markup percent.">
+                                </i>
+                            </label>
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="prix"
+                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-5 col-12 form-group px-lg-1  px-5">
+                            <label for="majoration" class="col-form-label d-flex justify-content-start align-items-baseline">Markup percent&nbsp;
+                                <i class="fas fa-question-circle" data-toggle="popover"
+                                    data-placement="top"
+                                    data-content="The percentage of your wholesale cost that the product's price is increased by to determine the selling price for your customers. For example, if you have a 50% markup on a product with a wholesale cost of $10, your selling price would be $15.00.">
+                                </i>
+                            </label>
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="majoration"
+                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">
+                        </div>
+                        <div class="col-lg-5 col-12 form-group px-lg-1  px-5">
+                            <label for="marge" class="col-form-label d-flex justify-content-start align-items-baseline">Gross margin percent&nbsp; 
+                                <i class="fas fa-question-circle" data-toggle="popover"
+                                    data-placement="top"
+                                    data-content="This percentage is the gross profit for your product. For example, if you have a product that has a wholesale cost of $10 and a selling price of $15,  your gross margin is 33.33%.">
+                                </i>
+                            </label>
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="marge"
+                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 d-flex justify-content-end">
+                            <button class="btn greenButton py-2 px-3 my-4 btn-success form-font" type="reset">Reset&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="fas fa-redo-alt"></i>
+                            </button>
+                        </div>
+                        <div class="col-6 d-flex justify-content-start">
+                            <button class="btn blueButton py-2 px-3 my-4 btn-info form-font" onclick="calculate1();" type="button">Calculate&nbsp;&nbsp; 
+                                <i class="fas fa-calculator"></i>&nbsp;&nbsp;
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <p class="px-lg-4 px-3 pt-lg-4 text-justify form-font">This tool can help you to determine the selling
+                    price, the profit margin or the gross margin. If you want to calculate the selling price you should
+                    enter the wholesale cost and the profit margin or the gross margin. If you want to know the profit
+                    margin or the gross margin you have to enter the wholesale cost and the selling price.</p>
+                <p class="px-lg-4 px-3 pb-2 pt-lg-4 text-justify form-font ">You should fill two fields, one field has
+                    to be one of the left options.</p>
             </div>
             <div class="col-md-5 col-12 px-0">
                 <img src="img/image.png" class="img-fluid" alt="Responsive image">
@@ -133,7 +220,8 @@
                 <small><a href="https://dubucmarketing.com" target="_blank">Conception et SEO </a></small>
             </div>
             <div class="dm-img">
-                <a href="https://dubucmarketing.com" target="_blank"><img alt="Dubuc Marketing" class="img-fluid" src="img/dm.png"></a>       
+                <a href="https://dubucmarketing.com" target="_blank"><img alt="Dubuc Marketing" class="img-fluid"
+                        src="img/dm.png"></a>
             </div>
 
         </div>

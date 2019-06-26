@@ -1,6 +1,5 @@
 $(document).ready(function () {
-    view('product');
-    $('[data-toggle="tooltip"]').tooltip();   
+    $('[data-toggle="popover"]').popover();  
 });
 
 var rep = "";
@@ -18,7 +17,7 @@ function product() {
         '</script>' +
         '</div>' +
         '<h1 class="text-center py-sm-4 py-4 font-weight-bold titre-font"> <span class="greenTitle">Calculate </span>product\'s profit</h1>' +
-        '<form action="" class="form-font" id="form">' +
+        '<form  class="form-font" id="form">' +
         '<div class="form-group d-flex flex-wrap">' +
         '<div class="alert alert-danger col-12 col-md-12" id="alerte">' +
         'You have to select either the wholesale cost or the selling price!' +
@@ -31,15 +30,15 @@ function product() {
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-1 "></div>' +
         '<div class="col-lg-5 col-12 form-group px-lg-1  px-5">' +
-        '<label for="cout" class="col-form-label d-flex justify-content-start align-items-baseline" title="Your total wholesale cost of the product that you are going to resell." '+
-        ' data-toggle="tooltip">Wholesale cost&nbsp;<i class="fas fa-question-circle" ></i></label>' +
+        '<label for="cout" class="col-form-label d-flex justify-content-start align-items-baseline">  '+
+        'Wholesale cost&nbsp;<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Your total wholesale cost of the product that you are going to resell."></i></label>' +
         '<input type="text" class="form-control greenBorder py-4 form-font" id="cout"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">' +
         '</div>' +
         '<div class="col-lg-5 col-12 form-group px-lg-1  px-5">' +
-        '<label for="prix" class="col-form-label d-flex justify-content-start align-items-baseline"  data-toggle="tooltip" ' +
-        'title="This is the price you charge your customers. This amount is always calculated, based on either the entered gross margin percent or markup percent.">Selling price&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="prix" class="col-form-label d-flex justify-content-start align-items-baseline">Selling price&nbsp;<i class="fas fa-question-circle"  ' +
+        'data-toggle="popover" data-placement="top" data-content="This is the price you charge your customers. This amount is always calculated, based on either the entered gross margin percent or markup percent."></i></label>' +
         '<input type="text" class="form-control greenBorder py-4 form-font" id="prix"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">' +
@@ -49,17 +48,17 @@ function product() {
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-1"></div>' +
         '<div class="col-lg-5 col-12 form-group px-lg-1  px-5">' +
-        '<label for="majoration" class="col-form-label d-flex justify-content-start align-items-baseline" data-toggle="tooltip"' +
-        'title="The percentage of your wholesale cost that the product\'s price is increased by to determine the selling price for your customers.' +
-        ' For example, if you have a 50% markup on a product with a wholesale cost of $10, your selling price would be $15.00.">Markup percent&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="majoration" class="col-form-label d-flex justify-content-start align-items-baseline">Markup percent&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="The percentage of your wholesale cost that the product\'s price is increased by to determine the selling price for your customers.' +
+        ' For example, if you have a 50% markup on a product with a wholesale cost of $10, your selling price would be $15.00."></i></label>' +
         '<input type="text" class="form-control greenBorder py-4 form-font" id="majoration"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">' +
         '</div>' +
         '<div class="col-lg-5 col-12 form-group px-lg-1  px-5">' +
-        '<label for="marge" class="col-form-label d-flex justify-content-start align-items-baseline" data-toggle="tooltip"' +
-        'title="This percentage is the gross profit for your product. For example, if you have a product that has a wholesale cost of $10 and a selling price of $15, ' +
-        ' your gross margin is 33.33%.">Gross margin percent&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="marge" class="col-form-label d-flex justify-content-start align-items-baseline">Gross margin percent&nbsp; ' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="This percentage is the gross profit for your product. For example, if you have a product that has a wholesale cost of $10 and a selling price of $15, ' +
+        ' your gross margin is 33.33%."></i></label>' +
         '<input type="text" class="form-control greenBorder py-4 form-font" id="marge"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">' +
@@ -98,7 +97,7 @@ function main() {
         '</script>' +
         '</div>' +
         '<h1 class="text-center py-sm-4 py-4 font-weight-bold titre-font"> <span class="greenTitle">Calculate </span>workforce\'s profit</h1>' +
-        '<form action="" class="form-font" id="form">' +
+        '<form  class="form-font" id="form">' +
         '<div class="form-group d-flex flex-wrap">' +
         '<div class="alert alert-danger col-12 col-md-12" id="alerte">' +
         'You have to write the workforce cost per hour and the number of hours!' +
@@ -110,15 +109,15 @@ function main() {
         '</div>' +
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-6 form-group px-lg-1  px-5">' +
-        '<label for="coutm" class="col-form-label d-flex justify-content-start align-items-baseline" data-toggle="tooltip"'+
-        'title="This is the cost of workforce per hour.">Workforce cost per hour&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="coutm" class="col-form-label d-flex justify-content-start align-items-baseline">Workforce cost per hour&nbsp;'+
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="This is the cost of workforce per hour."></i></label>' +
         '<input type="text" class="form-control greenBorder py-4 form-font" id="coutm"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);calculMain()" placeholder="">' +
         '</div>' +
         '<div class="col-lg-6 form-group px-lg-1  px-5">' +
-        '<label for="heures" class="col-form-label d-flex justify-content-start align-items-baseline" data-toggle="tooltip" '+
-        'title="This is the number of hours worked.">Number of hours&nbsp;<i class="fas fa-question-circle"></i> </label>' +
+        '<label for="heures" class="col-form-label d-flex justify-content-start align-items-baseline">Number of hours&nbsp;'+
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="This is the number of hours worked."></i> </label>' +
         '<input type="text" class="form-control greenBorder py-4 form-font" id="heures"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDThH(eeparseFloatTh(this.value),2);calculMain()" placeholder="">' +
@@ -126,16 +125,16 @@ function main() {
         '</div>' +
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-6 form-group px-lg-1  px-5">' +
-        '<label for="cout" class="col-form-label d-flex justify-content-start align-items-baseline" data-toggle="tooltip"' +
-        'title="Your total Workforce cost.">Workforce cost&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="cout" class="col-form-label d-flex justify-content-start align-items-baseline">Workforce cost&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Your total Workforce cost."></i></label>' +
         '<input type="text" class="form-control greenBorder py-4 form-font" id="cout"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="" readonly>' +
         '</div>' +
         '<div class="col-lg-6 form-group px-lg-1  px-5">' +
-        '<label for="prix" class="col-form-label d-flex justify-content-start align-items-baseline" data-toggle="tooltip"' +
-        'title="This is the price you charge your customers. This amount is always calculated, based on either the entered gross margin percent or markup percent.">' +
-        'Selling price&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="prix" class="col-form-label d-flex justify-content-start align-items-baseline">Selling price&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="This is the price you charge your customers. ' + 
+        ' This amount is always calculated, based on either the entered gross margin percent or markup percent."></i></label>' +
         '<input type="text" class="form-control greenBorder py-4 form-font" id="prix"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">' +
@@ -143,17 +142,16 @@ function main() {
         '</div>' +
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-6 form-group px-lg-1  px-5">' +
-        '<label for="majoration" class="col-form-label d-flex justify-content-start align-items-baseline" data-toggle="tooltip"' +
-        'title="The percentage of your workforce cost is increased by to determine the selling price for your customers.">Markup percent&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="majoration" class="col-form-label d-flex justify-content-start align-items-baseline">Markup percent&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="The percentage of your workforce cost is increased by to determine the selling price for your customers."></i></label>' +
         '<input type="text" class="form-control greenBorder py-4 form-font" id="majoration"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">' +
         '</div>' +
         '<div class="col-lg-6 form-group px-lg-1  px-5">' +
-        '<label for="marge" class="col-form-label d-flex justify-content-start align-items-baseline" data-toggle="tooltip"' +
-        'title="This percentage is the gross profit for your product. For example, if you have a product that has a wholesale cost of $10 and a selling price of $15, ' +
-        ' your gross margin is 33.33%.">' +
-        'Gross margin percent&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="marge" class="col-form-label d-flex justify-content-start align-items-baseline">Gross margin percent&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="This percentage is the gross profit for your product. ' + 
+        ' For example, if you have a product that has a wholesale cost of $10 and a selling price of $15, your gross margin is 33.33%."></i></label>' +
         '<input type="text" class="form-control greenBorder py-4 form-font" id="marge"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">' +
@@ -192,23 +190,23 @@ function enterprise() {
         '</div>' +
         '<h1 class="text-center py-sm-2 py-2 my-sm-0 font-weight-bold titre-font"> <span class="greenTitle">Calculate </span>enterprise\'s profit</h1>' +
         '' +
-        '<form action="" class="form-font" id="form">' +
+        '<form  class="form-font" id="form">' +
         '<div class="d-flex flex-wrap subtitle d-flex justify-content-center">' +
         'Revenues' +
         '</div>' +
         '<hr class="barGrey">' +
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-1 "></div>' +
-        '<div class="col-lg-5 px-lg-1  px-5">' +
-        '<label for="ventes" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="The amount of gross revenue from the products or services that were sold.">Gross Sales&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5">' +
+        '<label for="ventes" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Gross Sales&nbsp;' +
+        '<i class="fas fa-question-circle"  data-toggle="popover" data-placement="top" data-content="The amount of gross revenue from the products or services that were sold."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="ventes"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
         '</div>' +
-        '<div class="col-lg-5 px-lg-1  px-5 ">' +
-        '<label for="autres" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="The amount of income from other sources like interest on bank deposits, dividends from securities or rent on property leased to others.">Non-operating Income&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5 ">' +
+        '<label for="autres" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Non-operating Income&nbsp; ' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="The amount of income from other sources like interest on bank deposits, dividends from securities or rent on property leased to others."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="autres"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
@@ -218,15 +216,15 @@ function enterprise() {
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-1"></div>' +
         '<div class="col-lg-5 form-group px-lg-1  px-5">' +
-        '<label for="retours" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="The amount of the products returned to your customers.">Returns&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="retours" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Returns&nbsp; ' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="The amount of the products returned to your customers."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="retours"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
         '</div>' +
         '<div class="col-lg-5 form-group px-lg-1  px-5">' +
-        '<label for="revenus" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="Your total revenue is your net sales plus your non-operating income.">Total revenue&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="revenus" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Total revenue&nbsp; ' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Your total revenue is your net sales plus your non-operating income."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="revenus"' +
         'onKeyPress="return acceptNum(event)" readonly' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">' +
@@ -239,16 +237,16 @@ function enterprise() {
         '<hr class="barGrey">' +
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-1 "></div>' +
-        '<div class="col-lg-5 px-lg-1  px-5">' +
-        '<label for="cout" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="Cost of products sold is your beginning inventory plus your purchases minus the ending inventory.">Cost of products sold &nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5">' +
+        '<label for="cout" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Cost of products sold &nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Cost of products sold is your beginning inventory plus your purchases minus the ending inventory."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="cout"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
         '</div>' +
-        '<div class="col-lg-5 px-lg-1  px-5">' +
-        '<label for="entretien" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"'+
-        'title="This is the maintenance cost of your enterprise.">Maintenance cost&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5">' +
+        '<label for="entretien" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Maintenance cost&nbsp;'+
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="This is the maintenance cost of your enterprise."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="entretien"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
@@ -257,16 +255,16 @@ function enterprise() {
         '</div>' +
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-1"></div>' +
-        '<div class="col-lg-5 px-lg-1  px-5 ">' +
-        '<label for="salaires" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="Include your own at the actual rate you would have to pay someone else to do your job.">Wages and salaries&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5 ">' +
+        '<label for="salaires" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Wages and salaries&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Include your own at the actual rate you would have to pay someone else to do your job."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="salaires"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
         '</div>' +
-        '<div class="col-lg-5 px-lg-1  px-5">' +
-        '<label for="amortissement" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="A decline in the value of assets and allocating the cost of assets to the periods of time they were used.">Depreciation&nbsp;<i class="fas fa-question-circle"></i> </label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5">' +
+        '<label for="amortissement" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Depreciation&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="A decline in the value of assets and allocating the cost of assets to the periods of time they were used."></i> </label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="amortissement"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
@@ -275,16 +273,16 @@ function enterprise() {
         '</div>' +
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-1 "></div>' +
-        '<div class="col-lg-5 px-lg-1  px-5">' +
-        '<label for="loyer" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="Include your rent if that is the case.">Rent&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5">' +
+        '<label for="loyer" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Rent&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Include your rent if that is the case."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="loyer"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
         '</div>' +
-        '<div class="col-lg-5 px-lg-1  px-5">' +
-        '<label for="impots" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"'+
-        'title="Include the amount you pay for taxes and licences.">Taxes and licences&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5">' +
+        '<label for="impots" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Taxes and licences&nbsp;'+
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Include the amount you pay for taxes and licences."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="impots"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
@@ -293,16 +291,16 @@ function enterprise() {
         '</div>' +
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-1"></div>' +
-        '<div class="col-lg-5 px-lg-1  px-5">' +
-        '<label for="services" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="Electricity, gas, telephone, water, etc.">Utilities &nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5">' +
+        '<label for="services" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Utilities &nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Electricity, gas, telephone, water, etc."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="services"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
         '</div>' +
-        '<div class="col-lg-5 px-lg-1  px-5">' +
-        '<label for="interets" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="Interest charges for money owed.">Interest charges</label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5">' +
+        '<label for="interets" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline"' +
+        '>Interest charges&nbsp;<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Interest charges for money owed."></i> </label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="interets"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
@@ -311,16 +309,16 @@ function enterprise() {
         '</div>' +
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-1 "></div>' +
-        '<div class="col-lg-5 px-lg-1  px-5">' +
-        '<label for="web" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="Online stores, website hosting, domain name registration.">Costs of web presence&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5">' +
+        '<label for="web" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Costs of web presence&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Online stores, website hosting, domain name registration."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="web"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
         '</div>' +
-        '<div class="col-lg-5 px-lg-1  px-5">' +
-        '<label for="creances" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="A loss to the business that is classified as an expense because the debt cannot be collected.">Bad debts&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5">' +
+        '<label for="creances" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Bad debts&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="A loss to the business that is classified as an expense because the debt cannot be collected."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="creances"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
@@ -329,16 +327,16 @@ function enterprise() {
         '</div>' +
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-1"></div>' +
-        '<div class="col-lg-5 px-lg-1  px-5">' +
-        '<label for="assurances" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="The cost of your insurance.">Insurance&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5">' +
+        '<label for="assurances" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Insurance&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="The cost of your insurance."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="assurances"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
         '</div>' +
-        '<div class="col-lg-5 px-lg-1  px-5">' +
-        '<label for="assistance" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="Accountant, lawyer, information technology specialist, etc.">Professional assistance&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<div class="col-lg-5 form-group px-lg-1  px-5">' +
+        '<label for="assistance" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Professional assistance&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Accountant, lawyer, information technology specialist, etc."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="assistance"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
@@ -348,15 +346,15 @@ function enterprise() {
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-1"></div>' +
         '<div class="col-lg-5 form-group px-lg-1  px-5">' +
-        '<label for="pub" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"' +
-        'title="Advertising and promotional costs.">Advertising&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="pub" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Advertising&nbsp;' +
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Advertising and promotional costs."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="pub"' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2); calcul3();" placeholder="">' +
         '</div>' +
         '<div class="col-lg-5 form-group px-lg-1  px-5">' +
-        '<label for="despenses" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"'+
-        'title="Your total expenses.">Total expenses&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="despenses" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Total expenses&nbsp;'+
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Your total expenses."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="despenses" readonly' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">' +
@@ -369,22 +367,22 @@ function enterprise() {
         '<hr class="barGrey">' +
         '<div class="d-flex flex-wrap">' +
         '<div class="col-lg-4 px-lg-1  px-5">' +
-        '<label for="profit" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip" '+
-        'title="Difference between your total revenue and total expenses.">Profit or loss&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="profit" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Profit or loss&nbsp;'+
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Difference between your total revenue and total expenses."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="profit" readonly' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">' +
         '</div>' +
         '<div class="col-lg-4 px-lg-1  px-5">' +
-        '<label for="majoration" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"'+
-        'title="The percentage of your profit in relation to your expenses.">Markup %&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="majoration" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Markup %&nbsp;'+
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="The percentage of your profit in relation to your expenses."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="majoration" readonly' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">' +
         '</div>' +
         '<div class="col-lg-4 px-lg-1  px-5">' +
-        '<label for="marge" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline" data-toggle="tooltip"'+
-        'title="This percentage is the gross profit for your enterprise in relation to your revenue total.">Gross margin %&nbsp;<i class="fas fa-question-circle"></i></label>' +
+        '<label for="marge" class="col-form-label d-flex justify-content-start mb-0 pb-0 align-items-baseline">Gross margin %&nbsp;'+
+        '<i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="This percentage is the gross profit for your enterprise in relation to your revenue total."></i></label>' +
         '<input type="text" class="form-control greenBorder py-2 form-font" id="marge" readonly' +
         'onKeyPress="return acceptNum(event)"' +
         'onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">' +
@@ -410,7 +408,7 @@ var view = function (action) {
             $("#navbarProduct").addClass("active");
             product();
             $(document).ready(function () {
-                $('[data-toggle="tooltip"]').tooltip();   
+                $('[data-toggle="popover"]').popover(); 
             });
             break;
         case 'main':
@@ -422,7 +420,7 @@ var view = function (action) {
             $("#navbarMain").addClass("active");
             main();
             $(document).ready(function () {
-                $('[data-toggle="tooltip"]').tooltip();   
+                $('[data-toggle="popover"]').popover();
             });
             break;
         case 'enterprise':
@@ -434,7 +432,7 @@ var view = function (action) {
             $("#navbarEntrep").addClass("active");
             enterprise();
             $(document).ready(function () {
-                $('[data-toggle="tooltip"]').tooltip();   
+                $('[data-toggle="popover"]').popover(); 
             });
             break;
 

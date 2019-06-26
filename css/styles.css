@@ -110,6 +110,10 @@ hr.barInactive {
 	opacity: 0.2;
 }
 
+i[data-toggle=popover]:hover {
+	cursor: help;
+  }
+
 #logo {
 	width: 60%;
 }
@@ -238,7 +242,7 @@ nav {
 	}
 
 	#pub2 {
-		height: 400;
+		height: 400px;
 	}
 
 	.subtitle {

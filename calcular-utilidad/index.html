@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/favicon.ico" type="image/ico" sizes="16x16">
     <title>Calcular mi utilidad</title>
+    <meta name="description" content="Calcular mi utilidad es la herramienta de cálculo más utilizada en Quebec. Calcule su utilidad desde ahora!">
+    <meta name="keywords" content="calcular utilidad, calcular precio de venta, calcular margen bruto">
+    <meta name="author" content="Dubuc Marketing">
+    <meta name="robots" content="index,follow">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -112,6 +116,106 @@
                 </div>
             </div>
             <div class="col-md-5 col-12 px-0" id="main">
+                <div class="d-flex justify-content-center" id="pub1">
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- header-regledetrois -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:375px;height:90px"
+                        data-ad-client="ca-pub-0508437232650285"
+                        data-ad-slot="2107932848">
+                    </ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>   
+                </div>
+                <h1 class="text-center py-sm-4 py-4 font-weight-bold titre-font"> <span class="greenTitle">Calcular
+                    </span>utilidad de un Producto</h1>
+                <form class="form-font" id="form">
+                    <div class="form-group d-flex flex-wrap">
+                        <div class="alert alert-danger col-12 col-md-12" id="alerte">Debe seleccionar el precio de compra o el precio de venta
+                            <button type="button" class="close" onclick="document.getElementById('alerte').style.display = 'none';">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="col-lg-1 "></div>
+                        <div class="col-lg-5 col-12 px-lg-1  px-5 form-group">
+                            <label for="cout" class="col-form-label d-flex justify-content-start align-items-baseline">Costo/precio de compra&nbsp;
+                                <i class="fas fa-question-circle" data-toggle="popover" data-placement="top"
+                                    data-content="Costo total del producto que quiere vender.">
+                                </i>
+                            </label>
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="cout"
+                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">
+                        </div>
+                        <div class="col-lg-5 col-12 px-lg-1  px-5 form-group">
+                            <label for="prix" class="col-form-label d-flex justify-content-start align-items-baseline">Precio de venta&nbsp;
+                                <i class="fas fa-question-circle" data-toggle="popover" data-placement="top"
+                                    data-content="Es el precio que va a facturar a sus clientes. Éste monto es siempre calculado, ya sea en función del margen bruto o del porcentaje de incremento.">
+                                </i>
+                            </label>
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="prix"
+                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">
+                        </div>
+                        <div class="col-lg-1"></div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-5 col-12 px-lg-1  px-5 form-group">
+                            <label for="majoration" class="col-form-label d-flex justify-content-start align-items-baseline">Incremento del precio %&nbsp;
+                                <i class="fas fa-question-circle" data-toggle="popover"
+                                    data-placement="top"
+                                    data-content="El porcentaje de incremento del costo utilizado para determinar el precio de venta a sus clientes. Por ejemplo, si usted tiene un incremento de 50% sobre un producto cuyo precio es 10$, su precio de venta sería de 15$.">
+                                </i>
+                            </label>
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="majoration"
+                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">
+                        </div>
+                        <div class="col-lg-5 col-12 px-lg-1  px-5 form-group">
+                            <label for="marge" class="col-form-label d-flex justify-content-start align-items-baseline">Margen bruto en %&nbsp;
+                                <i class="fas fa-question-circle" data-toggle="popover" data-placement="top"
+                                    data-content="Éste porcentaje es el beneficio bruto de su producto. Por ejemolo, si usted tiene un producto cuyo costo es de 10$ y el precio de venta es de 15$, su margen bruto es de 33,33 %.">
+                                </i>
+                            </label>
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="marge"
+                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                        <div class="col-6 d-flex justify-content-end">
+                            <button class="btn greenButton py-2  px-3 my-4 btn-success form-font" type="reset">Reiniciar&nbsp;&nbsp;&nbsp;
+                                <i class="fas fa-redo-alt"></i>
+                            </button>
+                        </div>
+                        <div class="col-6 d-flex justify-content-start">
+                            <button class="btn blueButton py-2 px-2 px-lg-3 my-4 btn-info form-font" onclick="calculate1();" type="button">Calcular&nbsp;&nbsp;&nbsp; 
+                                <i class="fas fa-calculator"></i>&nbsp;
+                            </button></div>
+                    </div>
+                </form>
+                <p class="px-lg-4 px-3 pt-lg-4 text-justify form-font">Ésta herramienta le permitirá calcular el precio
+                    de venta, el incremento del precio en % o el margen bruto en %. Debe llenar dos campos, uno de los
+                    cuáles debe ser una de las opciones de la izquierda.</p>
+                <p class="px-lg-4 px-3 pb-lg-4 text-justify form-font">Si quiere conocer el incremento del precio en % y
+                    el margen bruto en % debe indicar el precio de venta. Si quiere calcular el precio de venta y el
+                    margen bruto en % debe indicar el incremento del precio en %. Si quiere saber el precio de venta y
+                    el incremento del precio en % debe indicar el margen bruto en %.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             </div>
             <div class="col-md-5 col-12 px-0">
