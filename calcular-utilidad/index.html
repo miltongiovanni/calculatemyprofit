@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142842225-1"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-142842225-1');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/favicon.ico" type="image/ico" sizes="16x16">
@@ -10,16 +12,12 @@
     <meta name="keywords" content="calcular utilidad, calcular precio de venta, calcular margen bruto">
     <meta name="author" content="Dubuc Marketing">
     <meta name="robots" content="index,follow">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
     <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/general.js"></script>
+    <script src="../js/general.jd"></script>
     <script src="../js/vistas.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
@@ -28,34 +26,24 @@
             enable_page_level_ads: true
         });
     </script>
+    <meta name="google-site-verification" content="-2BRBC7m1zW2WR3uSXgRWu_CdV4wUOlq2qqY2qGcxrU" />
 </head>
-
 <body>
     <div class="container-fluid px-0">
         <div class="d-flex flex-wrap">
             <div class="col-md-2 col-12 px-0">
                 <div class="d-flex flex-wrap align-items-baseline">
                     <div class="col-md-12 col-sm-10 col-10 px-0">
-                        <a class="navbar-brand ml-2 mt-3 w-100" href="javascript:void(0);"><img class="img-fluid"
-                                id="logo" src="../img/logo.png" alt="" onclick="location.reload();"></a>
+                        <a class="navbar-brand ml-2 mt-3 w-100" href="javascript:void(0);"><img class="img-fluid" id="logo" src="../img/logo.png" alt="" onclick="location.reload();"></a>
                     </div>
                     <div class="col-2 d-block d-md-none">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>
                         </button>
                     </div>
                     <div class="col-md-12 col-sm-2 col-12 px-0">
-                        <nav class="navbar navbar-expand-md flex-row flex-md-row navbar-light bd-navbar bg-white p-0 w-100 my-lg-4 my-1 nav-font"
-                            id="menu">
-                            <!--<button class="navbar-toggler" type="button" data-toggle="collapse"
-                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>-->
+                        <nav class="navbar navbar-expand-md flex-row flex-md-row navbar-light bd-navbar bg-white p-0 w-100 my-lg-4 my-1 nav-font" id="menu">
                             <div class="collapse navbar-collapse w-100" id="navbarSupportedContent">
-                                <!--<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">-->
                                 <ul class="navbar-nav d-block w-100">
                                     <li class="nav-item" id="menuProduit">
                                         <div class="d-flex flex-wrap">
@@ -63,9 +51,7 @@
                                                 <hr class="barActive" id="barProduit">
                                             </div>
                                             <div class="col-lg-10 col-sm-10 col-10 px-0">
-                                                <a class="nav-link " href="javascript:void(0);" id="navbarProduit"
-                                                    onClick="vista('producto'); $('.collapse').collapse('hide');"
-                                                    role="button">Utilidad Producto</a>
+                                                <a class="nav-link " href="javascript:void(0);" id="navbarProduit" onClick="vista('producto'); $('.collapse').collapse('hide');" role="button">Utilidad Producto</a>
                                             </div>
                                         </div>
                                     </li>
@@ -75,9 +61,7 @@
                                                 <hr class="barInactive" id="barMain">
                                             </div>
                                             <div class="col-lg-10 col-sm-10 col-10 px-0">
-                                                <a class="nav-link " href="javascript:void(0);" id="navbarMain"
-                                                    onClick="vista('principal'); $('.collapse').collapse('hide');"
-                                                    role="button">Utilidad Mano de obra</a>
+                                                <a class="nav-link " href="javascript:void(0);" id="navbarMain" onClick="vista('principal'); $('.collapse').collapse('hide');" role="button">Utilidad Mano de obra</a>
                                             </div>
                                         </div>
                                     </li>
@@ -87,16 +71,12 @@
                                                 <hr class="barInactive" id="barEntrep">
                                             </div>
                                             <div class="col-lg-10 col-sm-10 col-10 px-0">
-                                                <a class="nav-link" href="javascript:void(0);" id="navbarEntrep"
-                                                    onClick="vista('empresa'); $('.collapse').collapse('hide');"
-                                                    role="button">Utilidad Empresa</a>
+                                                <a class="nav-link" href="javascript:void(0);" id="navbarEntrep" onClick="vista('empresa'); $('.collapse').collapse('hide');" role="button">Utilidad Empresa</a>
                                             </div>
                                         </div>
-
                                     </li>
                                 </ul>
                             </div>
-
                         </nav>
                         <a class="nav-link active" href="../" role="button">EN</a>
                         <a class="nav-link active" href="../outil-calcul-profit" role="button">FR</a>
@@ -105,8 +85,7 @@
                         <div class="justify-content-center d-none  d-lg-flex" id="pub2">
                             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                             <!-- Large-skyscrapper-droite-proverbes -->
-                            <ins class="adsbygoogle" style="display:inline-block;width:220px;height:400px"
-                                data-ad-client="ca-pub-0508437232650285" data-ad-slot="9069790694"></ins>
+                            <ins class="adsbygoogle" style="display:inline-block;width:220px;height:400px" data-ad-client="ca-pub-0508437232650285" data-ad-slot="9069790694"></ins>
                             <script>
                                 (adsbygoogle = window.adsbygoogle || []).push({});
                             </script>
@@ -119,44 +98,31 @@
                 <div class="d-flex justify-content-center" id="pub1">
                     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                     <!-- header-regledetrois -->
-                    <ins class="adsbygoogle"
-                        style="display:inline-block;width:375px;height:90px"
-                        data-ad-client="ca-pub-0508437232650285"
-                        data-ad-slot="2107932848">
-                    </ins>
+                    <ins class="adsbygoogle" style="display:inline-block;width:375px;height:90px" data-ad-client="ca-pub-0508437232650285" data-ad-slot="2107932848"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>   
                 </div>
-                <h1 class="text-center py-sm-4 py-4 font-weight-bold titre-font"> <span class="greenTitle">Calcular
-                    </span>utilidad de un Producto</h1>
+                <h1 class="text-center py-sm-4 py-4 font-weight-bold titre-font"> <span class="greenTitle">Calcular </span>utilidad de un Producto</h1>
                 <form class="form-font" id="form">
                     <div class="form-group d-flex flex-wrap">
                         <div class="alert alert-danger col-12 col-md-12" id="alerte">Debe seleccionar el precio de compra o el precio de venta
-                            <button type="button" class="close" onclick="document.getElementById('alerte').style.display = 'none';">
-                                <span aria-hidden="true">×</span>
-                            </button>
+                            <button type="button" class="close" onclick="document.getElementById('alerte').style.display = 'none';"><span aria-hidden="true">×</span></button>
                         </div>
                     </div>
                     <div class="d-flex flex-wrap">
                         <div class="col-lg-1 "></div>
                         <div class="col-lg-5 col-12 px-lg-1  px-5 form-group">
                             <label for="cout" class="col-form-label d-flex justify-content-start align-items-baseline">Costo/precio de compra&nbsp;
-                                <i class="fas fa-question-circle" data-toggle="popover" data-placement="top"
-                                    data-content="Costo total del producto que quiere vender.">
-                                </i>
+                                <i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Costo total del producto que quiere vender."></i>
                             </label>
-                            <input type="text" class="form-control greenBorder py-4 form-font" id="cout"
-                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="cout" onkeypress="return acceptNum(event)" onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">
                         </div>
                         <div class="col-lg-5 col-12 px-lg-1  px-5 form-group">
                             <label for="prix" class="col-form-label d-flex justify-content-start align-items-baseline">Precio de venta&nbsp;
-                                <i class="fas fa-question-circle" data-toggle="popover" data-placement="top"
-                                    data-content="Es el precio que va a facturar a sus clientes. Éste monto es siempre calculado, ya sea en función del margen bruto o del porcentaje de incremento.">
-                                </i>
+                                <i class="fas fa-question-circle" data-toggle="popover" data-placement="top" data-content="Es el precio que va a facturar a sus clientes. Éste monto es siempre calculado, ya sea en función del margen bruto o del porcentaje de incremento."></i>
                             </label>
-                            <input type="text" class="form-control greenBorder py-4 form-font" id="prix"
-                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="prix" onkeypress="return acceptNum(event)" onchange="this.value=eedisplayFloatNDTh(eeparseFloatTh(this.value),2);" placeholder="">
                         </div>
                         <div class="col-lg-1"></div>
                     </div>
@@ -164,13 +130,11 @@
                         <div class="col-lg-1"></div>
                         <div class="col-lg-5 col-12 px-lg-1  px-5 form-group">
                             <label for="majoration" class="col-form-label d-flex justify-content-start align-items-baseline">Incremento del precio %&nbsp;
-                                <i class="fas fa-question-circle" data-toggle="popover"
-                                    data-placement="top"
+                                <i class="fas fa-question-circle" data-toggle="popover" data-placement="top"
                                     data-content="El porcentaje de incremento del costo utilizado para determinar el precio de venta a sus clientes. Por ejemplo, si usted tiene un incremento de 50% sobre un producto cuyo precio es 10$, su precio de venta sería de 15$.">
                                 </i>
                             </label>
-                            <input type="text" class="form-control greenBorder py-4 form-font" id="majoration"
-                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="majoration" onkeypress="return acceptNum(event)" onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">
                         </div>
                         <div class="col-lg-5 col-12 px-lg-1  px-5 form-group">
                             <label for="marge" class="col-form-label d-flex justify-content-start align-items-baseline">Margen bruto en %&nbsp;
@@ -178,45 +142,23 @@
                                     data-content="Éste porcentaje es el beneficio bruto de su producto. Por ejemolo, si usted tiene un producto cuyo costo es de 10$ y el precio de venta es de 15$, su margen bruto es de 33,33 %.">
                                 </i>
                             </label>
-                            <input type="text" class="form-control greenBorder py-4 form-font" id="marge"
-                                onkeypress="return acceptNum(event)" onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">
+                            <input type="text" class="form-control greenBorder py-4 form-font" id="marge" onkeypress="return acceptNum(event)" onchange="this.value=eedisplayPercentND(eeparsePercent(this.value),2);" placeholder="">
                         </div>
                         <div class="col-md-1"></div>
                     </div>
                     <div class="d-flex flex-wrap">
                         <div class="col-6 d-flex justify-content-end">
-                            <button class="btn greenButton py-2  px-3 my-4 btn-success form-font" type="reset">Reiniciar&nbsp;&nbsp;&nbsp;
-                                <i class="fas fa-redo-alt"></i>
-                            </button>
+                            <button class="btn greenButton py-2  px-3 my-4 btn-success form-font" type="reset">Reiniciar&nbsp;&nbsp;&nbsp;<i class="fas fa-redo-alt"></i></button>
                         </div>
                         <div class="col-6 d-flex justify-content-start">
-                            <button class="btn blueButton py-2 px-2 px-lg-3 my-4 btn-info form-font" onclick="calculate1();" type="button">Calcular&nbsp;&nbsp;&nbsp; 
-                                <i class="fas fa-calculator"></i>&nbsp;
-                            </button></div>
+                            <button class="btn blueButton py-2 px-2 px-lg-3 my-4 btn-info form-font" onclick="calculate1();" type="button">Calcular&nbsp;&nbsp;&nbsp;<i class="fas fa-calculator"></i>&nbsp;</button>
+                        </div>
                     </div>
                 </form>
-                <p class="px-lg-4 px-3 pt-lg-4 text-justify form-font">Ésta herramienta le permitirá calcular el precio
-                    de venta, el incremento del precio en % o el margen bruto en %. Debe llenar dos campos, uno de los
+                <p class="px-lg-4 px-3 pt-lg-4 text-justify form-font">Ésta herramienta le permitirá calcular el precio de venta, el incremento del precio en % o el margen bruto en %. Debe llenar dos campos, uno de los
                     cuáles debe ser una de las opciones de la izquierda.</p>
-                <p class="px-lg-4 px-3 pb-lg-4 text-justify form-font">Si quiere conocer el incremento del precio en % y
-                    el margen bruto en % debe indicar el precio de venta. Si quiere calcular el precio de venta y el
-                    margen bruto en % debe indicar el incremento del precio en %. Si quiere saber el precio de venta y
-                    el incremento del precio en % debe indicar el margen bruto en %.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <p class="px-lg-4 px-3 pb-lg-4 text-justify form-font">Si quiere conocer el incremento del precio en % y el margen bruto en % debe indicar el precio de venta. Si quiere calcular el precio de venta y el
+                    margen bruto en % debe indicar el incremento del precio en %. Si quiere saber el precio de venta y el incremento del precio en % debe indicar el margen bruto en %.</p>
             </div>
             <div class="col-md-5 col-12 px-0">
                 <img src="../img/image.png" class="img-fluid" alt="Responsive image">
@@ -224,12 +166,8 @@
         </div>
     </div>
     <footer class="container-fluid font-footer">
-
-        <!-- Copyright -->
-
         <div class="d-flex flex-wrap justify-content-center align-items-center pt-5 pt-md-5 pb-5 pb-md-4">
-            <small>© 2019 Copyright: <a href="javascript:void(0);" onclick="location.reload();"
-                    class="text-black">calculatemyprofit.com</a></small>
+            <small>© 2019 Copyright: <a href="javascript:void(0);" onclick="location.reload();" class="text-black">calculatemyprofit.com</a></small>
         </div>
         <div class="row justify-content-end align-items-center py-1 py-md-0">
             <div class="dm-liens">
@@ -237,21 +175,13 @@
                 <small><a href="https://dubucmarketing.com" target="_blank">Conception et SEO </a></small>
             </div>
             <div class="dm-img">
-                <a href="https://dubucmarketing.com" target="_blank"><img alt="Dubuc Marketing" class="img-fluid"
-                        src="../img/dm.png"></a>
+                <a href="https://dubucmarketing.com" target="_blank"><img alt="Dubuc Marketing" class="img-fluid" src="../img/dm.png"></a>
             </div>
-
         </div>
-
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
 </html>

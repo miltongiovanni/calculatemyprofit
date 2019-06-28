@@ -394,7 +394,11 @@ function enterprise() {
         'type="reset">Reset&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-redo-alt"></i></button>' +
         '</div>' +
         '</div>' +
-        '</form>';
+        '</form>'+ 
+        '<p class="px-lg-3 px-3 pt-lg-4 text-justify form-font">Calculating your profit can not only help you determine your level of success, '+
+        'it also provides information about where your business is making money and where you are spending it.</p>'+
+        '<p class="px-lg-3 px-3 pt-lg-4 text-justify form-font">Understanding your expenses is the first step for controlling them and increasing your profit. '+
+        'Keeping records that are accurate, up-to-date and easy to use is essential to obtaining a precise calculation of your profits.</p>';
     $('#main').html(rep);
 }
 var view = function (action) {

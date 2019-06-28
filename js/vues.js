@@ -392,7 +392,11 @@ function entreprise() {
         'type="reset">Réinitialiser&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-redo-alt"></i></button>' +
         '</div>' +
         '</div>' +
-        '</form>';
+        '</form>'+ 
+        '<p class="px-lg-3 px-3 pt-lg-4 text-justify form-font">Calculer votre profit vous permet non seulement d’évaluer votre degré de réussite, '+
+        'mais aussi de déterminer comment votre entreprise fait de l’argent et comment vous le dépensez.</p>'+
+        '<p class="px-lg-3 px-3 pt-lg-4 text-justify form-font">Comprendre vos dépenses constitue le premier pas pour les contrôler et augmenter votre profit.  '+
+        'Une tenue des livres fidèle, à jour et facile à utiliser est essentielle pour obtenir un aperçu exact de votre profit.</p>';
     $('#main').html(rep);
 }
 var vue = function (action) {

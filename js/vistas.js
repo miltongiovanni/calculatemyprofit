@@ -390,7 +390,11 @@ function empresa() {
         'type="reset">Reiniciar&nbsp;&nbsp;&nbsp;<i class="fas fa-redo-alt"></i></button>' +
         '</div>' +
         '</div>' +
-        '</form>';
+        '</form>'+ 
+        '<p class="px-lg-3 px-3 pt-lg-4 text-justify form-font">Es importante calcular su utilidad no sólo para determinar su nivel de éxito '+
+        'sino también para saber dónde está ganando dinero y dónde lo está gastando.</p>'+
+        '<p class="px-lg-3 px-3 pt-lg-4 text-justify form-font">Hay que saber cuáles son sus gastos para poder controlarlos y para aumentar sus ganancias. '+
+        'Es muy recomendado que lleve un registro preciso, actualizado y de fácil manejo para obtener un cálculo exacto de la utilidad.</p>';
     $('#main').html(rep);
 }
 var vista = function (action) {
